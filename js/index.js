@@ -64,8 +64,15 @@ let newNav = document.createElement('a')
 let newLastNav = document.createElement('a')
 //makes new anchor element to use .appendChild on
 
-navI.prepend(newNav);
-navI.appendChild(newLastNav);
+newNav.textContent='FIRST';
+newLastNav.textContent = 'LAST';
+
+const newNavInfo =  document.querySelector('nav');
+newNavInfo.prepend(newNav);
+
+const newLastInfo = document.querySelector('nav');
+newLastInfo.appendChild(newLastNav);
+
 
 
 
