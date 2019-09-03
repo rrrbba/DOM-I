@@ -58,7 +58,7 @@ navBar.forEach(function(item){
   item.style.color = 'green'
 })
 let navI = document.querySelector('nav')
-//used to select the first nav item
+//sets variable to the nav
 let newNav = document.createElement('a')
 //makes new anchor element to use .prepend on
 let newLastNav = document.createElement('a')
