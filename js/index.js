@@ -48,12 +48,12 @@ let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 let navBar = document.querySelectorAll('nav a');
-navBar[0].innerHTML = siteContent.nav['nav-item-1'];
-navBar[1].innerHTML = siteContent.nav['nav-item-2'];
-navBar[2].innerHTML = siteContent.nav['nav-item-3'];
-navBar[3].innerHTML = siteContent.nav['nav-item-4'];
-navBar[4].innerHTML = siteContent.nav['nav-item-5'];
-navBar[5].innerHTML = siteContent.nav['nav-item-6'];
+navBar[0].textContent = siteContent.nav['nav-item-1'];
+navBar[1].textContent = siteContent.nav['nav-item-2'];
+navBar[2].textContent = siteContent.nav['nav-item-3'];
+navBar[3].textContent = siteContent.nav['nav-item-4'];
+navBar[4].textContent = siteContent.nav['nav-item-5'];
+navBar[5].textContent = siteContent.nav['nav-item-6'];
 navBar.forEach(function(item){
   item.style.color = 'green'
 })
@@ -78,32 +78,32 @@ newLastInfo.appendChild(newLastNav);
 
 
 let bigStuff = document.querySelector('.cta-text h1');
-bigStuff.innerHTML = siteContent.cta['h1']
+bigStuff.textContent = siteContent.cta['h1']
 
 let bigButton = document.querySelector('.cta-text button');
-bigButton.innerHTML = siteContent.cta['button']
+bigButton.textContent = siteContent.cta['button']
 
 let textTitle = document.querySelectorAll('.text-content h4');
-textTitle[0].innerHTML = siteContent['main-content']["features-h4"]
-textTitle[1].innerHTML = siteContent['main-content']["about-h4"]
-textTitle[2].innerHTML = siteContent['main-content']["services-h4"]
-textTitle[3].innerHTML = siteContent['main-content']["product-h4"]
-textTitle[4].innerHTML = siteContent['main-content']["vision-h4"]
+textTitle[0].textContent = siteContent['main-content']["features-h4"]
+textTitle[1].textContent = siteContent['main-content']["about-h4"]
+textTitle[2].textContent = siteContent['main-content']["services-h4"]
+textTitle[3].textContent = siteContent['main-content']["product-h4"]
+textTitle[4].textContent = siteContent['main-content']["vision-h4"]
 
 let textWord = document.querySelectorAll('.text-content p');
-textWord[0].innerHTML = siteContent['main-content']["features-content"]
-textWord[1].innerHTML = siteContent['main-content']["about-content"]
-textWord[2].innerHTML = siteContent['main-content']["services-content"]
-textWord[3].innerHTML = siteContent['main-content']["product-content"]
-textWord[4].innerHTML = siteContent['main-content']["vision-content"]
+textWord[0].textContent = siteContent['main-content']["features-content"]
+textWord[1].textContent = siteContent['main-content']["about-content"]
+textWord[2].textContent = siteContent['main-content']["services-content"]
+textWord[3].textContent = siteContent['main-content']["product-content"]
+textWord[4].textContent = siteContent['main-content']["vision-content"]
 
 let contactTitle = document.querySelector('.contact h4');
-contactTitle.innerHTML = siteContent['contact']['contact-h4']
+contactTitle.textContent = siteContent['contact']['contact-h4']
 
 let contactText = document.querySelectorAll('.contact p');
-contactText[0].innerHTML = siteContent['contact']['address']
-contactText[1].innerHTML = siteContent['contact']['phone']
-contactText[2].innerHTML = siteContent['contact']['email']
+contactText[0].textContent = siteContent['contact']['address']
+contactText[1].textContent = siteContent['contact']['phone']
+contactText[2].textContent = siteContent['contact']['email']
 
 let foot = document.querySelector('footer');
-foot.innerHTML = siteContent['footer']['copyright']
+foot.textContent = siteContent['footer']['copyright']
