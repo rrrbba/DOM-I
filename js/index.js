@@ -54,6 +54,21 @@ navBar[2].innerHTML = siteContent.nav['nav-item-3'];
 navBar[3].innerHTML = siteContent.nav['nav-item-4'];
 navBar[4].innerHTML = siteContent.nav['nav-item-5'];
 navBar[5].innerHTML = siteContent.nav['nav-item-6'];
+navBar.forEach(function(item){
+  item.style.color = 'green'
+})
+let navI = document.querySelector('nav')
+//used to select the first nav item
+let newNav = document.createElement('a')
+//makes new anchor element to use .prepend on
+let newLastNav = document.createElement('a')
+//makes new anchor element to use .appendChild on
+
+navI.prepend(newNav);
+navI.appendChild(newLastNav);
+
+
+
 
 let bigStuff = document.querySelector('.cta-text h1');
 bigStuff.innerHTML = siteContent.cta['h1']
